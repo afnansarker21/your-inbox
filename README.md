@@ -8,3 +8,7 @@ About 80% of people state that work related emails makes them anxious, over half
 
 **The solution**:
 Gamified version of inbox clearing to be made. This allows users to practice checking, refresing and clearing their randomised emails in a low-stakes, satisfying environment. Users can create an account, and login regularly to practice clearing their inbox, allowing them to slowly face and overcome their fears. 
+
+**References**: 
+Team, S. (2025, May). Email anxiety: why it happens and how to beat it. Superhuman Blog. [https://blog.superhuman.com/email-anxiety/](https://blog.superhuman.com/email-anxiety/#:~:text=And%20guess%20what?%2080%25%20of%20people%20say,workplace%20anxiety%2C%20affecting%20301%20million%20people%20globally.)
+
