@@ -1,0 +1,143 @@
+.logo-container {
+    text-align: left; 
+    padding: 1px 0;  
+    border-bottom: 2px solid #ccc; 
+}
+
+
+img {
+    width: 250px;
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+    font-family: "Lexend", sans-serif;
+  }
+
+  .background {
+    background-color: #FF9933;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* White card for form */
+.rego-card {
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    width: 350px;
+    text-align: left;
+    font-family: "Lexend", sans-serif;
+}
+
+/* Headings inside the card */
+.rego-card h1 {
+    color: #FF9933;
+    font-size: 32px;
+    margin-bottom: 10px;
+    font-family: "Lexend", sans-serif;
+    
+}
+
+.rego-card p {
+    color: gray;
+    margin-bottom: 20px;
+    font-family: "Lexend", sans-serif;
+    font-size: 15px;
+}
+
+.rego-card input[type="text"],
+.rego-card input[type="email"],
+.rego-card input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-family: "Lexend", sans-serif;
+}
+
+.name-row {
+    display: flex;
+    gap: 10px;
+}
+
+.name-row input {
+    flex: 1;
+}
+
+/* Login button */
+#rego-btn {
+    background-color: #FF9933;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 30px;
+    font-family: "Lexend", sans-serif;
+}
+
+
+
+/* Footer styling */
+footer {
+    background-color: #000; 
+    color: #fff;            
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 40px;      
+    flex-wrap: wrap;
+}
+
+/* Footer logo */
+.footer-logo img {
+    height: 80px;  
+    width: auto;   
+}
+
+/* Footer social */
+.footer-social {
+    text-align: right;
+    font-family: "Lexend", sans-serif;
+}
+
+.footer-social p {
+    margin: 0 0 10px 0;   
+    font-weight: bold;
+    color: white;
+}
+
+.footer-social ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;           
+}
+
+.footer-social ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-social ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer copy */
+.footer-copy {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #ccc;
+    font-family: "Lexend", sans-serif;
+}
