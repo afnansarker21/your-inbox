@@ -30,9 +30,10 @@
                     <input type="text" placeholder="Last name" name="last_name" required>
                 </div>
 
-                    <input type="email" placeholder="Email address" name="email" required>
-                    <input type="password" placeholder="Password" name="psw" required>
-                    <input type="password" placeholder="Confirm Password" name="confirm_password" required>
+                    <input type="email" id="email" placeholder="Email address" name="email" required>
+                    <input type="password" id="password" placeholder="Password" name="psw" required>
+                    <input type="password" id="confirm_password" placeholder="Confirm Password" name="confirm_password" required>
+                    <p id="error-message" style="color: red; font-family: 'Times New Roman', serif;"></p>
 
                     <label class="checkbox">
                         <input type="checkbox" name="remember"> Remember me
@@ -63,5 +64,6 @@
         <p>&copy; 2026 Your Inbox. All rights reserved.</p>
     </footer>
 
+    <script src="javascript/registration.js"></script>
 </body>
 </html>
