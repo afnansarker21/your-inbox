@@ -1,0 +1,12 @@
+<h1 id="welcome"></h1>
+
+<script>
+const params = new URLSearchParams(window.location.search);
+const firstName = params.get("firstName");
+
+const formattedName = firstName 
+    ? firstName.charAt(0).toUpperCase() + firstName.slice(1).toLowerCase() 
+    : "User";
+
+document.getElementById("welcome").textContent = `Welcome back, ${formattedName}`;
+</script>
