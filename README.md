@@ -1,5 +1,5 @@
 # your-inbox
-Will be made soon! Using: Visual Studio Code, HTML, CSS, JavaScript, (other backend stuff to be used!).
+Will be made soon! Using: Visual Studio Code, HTML, CSS, JavaScript, Vanilla JS, Node.js, Express.js, SQLite, CORS and Body-parser.
 
 View storyboard [here](https://docs.google.com/presentation/d/15ksF_2PTSywoEOhdTFEGVXB-Q3EdV7P9_DGxWM1xduc/edit?usp=sharing), thanks. 
 
