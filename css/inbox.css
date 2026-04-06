@@ -1,0 +1,116 @@
+h1 {
+    color: rgba(255, 129, 74);
+    font-size: 50px;
+    font-family: "Lexend", sans-serif;
+    font-weight: 300;
+}
+
+p {
+    color: gray;
+    font-family: "Lexend", sans-serif;
+
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+    font-family: "Lexend", sans-serif;
+  }
+
+  .logo-container {
+    text-align: left; 
+    padding: 1px 0;  
+    border-bottom: 2px solid #ccc; 
+}
+
+
+main {
+    margin: 70px;
+    text-align: left;  
+}
+
+
+img {
+    width: 250px;
+}
+
+.welcome-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: centre;
+    margin-bottom: 20px;
+
+}
+
+
+
+#signout-btn {
+    background-color: #FF814A;
+    color: white;
+    padding: 14px 24px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    font-family: "Lexend", sans-serif;
+}
+
+#signout-btn:hover {
+    background-color: #FFA669;
+}
+
+
+/* Footer styling */
+footer {
+    background-color: #000; 
+    color: #fff;            
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 40px;      
+    flex-wrap: wrap;
+}
+
+/* Footer logo */
+.footer-logo img {
+    height: 80px;  
+    width: auto;   
+}
+
+/* Footer social */
+.footer-social {
+    text-align: right;
+}
+
+.footer-social p {
+    margin: 0 0 10px 0;   
+    font-weight: bold;
+    color: white;
+}
+
+.footer-social ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;           
+}
+
+.footer-social ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-social ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer copy */
+.footer-copy {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1rem;
+}

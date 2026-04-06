@@ -1,12 +1,65 @@
-<h1 id="welcome"></h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Inbox</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
 
-<script>
-const params = new URLSearchParams(window.location.search);
-const firstName = params.get("firstName");
+    <link rel="stylesheet" href="css/inbox.css">
+</head>
 
-const formattedName = firstName 
-    ? firstName.charAt(0).toUpperCase() + firstName.slice(1).toLowerCase() 
-    : "User";
+<body>
 
-document.getElementById("welcome").textContent = `Welcome back, ${formattedName}`;
-</script>
+    <div class="logo-container">
+        <a href="inbox.html">
+        <img src="/Users/sarker.asafuddoula/Downloads/your-inbox/image/logo.png" alt="Logo"></a>
+    </div>
+
+    <main>
+        <div class="background"></div>
+        <div class="container">
+            <div class="welcome-container">
+                <h1 id="welcome"></h1>
+                <a href="signout.html"><button id="signout-btn">Sign Out</button></a>
+            </div>
+                <p>You have (3) inboxes to clear</p>
+            </div>
+        </div>
+    </main>
+
+
+    <script>
+        const firstName = localStorage.getItem("firstName");
+        
+        const formattedName = firstName 
+            ? firstName.charAt(0).toUpperCase() + firstName.slice(1).toLowerCase() 
+            : "User";
+        
+        document.getElementById("welcome").textContent = `Good to see you, ${formattedName}`;
+        </script>
+
+<footer>
+    <div class="footer-logo">
+        <a href="inbox.html">
+        <img src="/Users/sarker.asafuddoula/Downloads/your-inbox/image/darklogo.png" alt="Logo"></a>
+    </div>
+
+    <div class="footer-social">
+        <p>Follow us:</p>
+        <ul>
+            <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+            <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+        </ul>
+    </div>
+
+    <p>&copy; 2026 Your Inbox. All rights reserved.</p>
+</footer>
+
+
+
+<script src="inbox.js"></script>
+</body>
+</html>

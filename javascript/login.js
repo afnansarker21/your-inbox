@@ -17,9 +17,14 @@ form.addEventListener("submit", async function(event) {
             const data = await response.json();
 
             if (response.ok) {
-                window.location.href = `inbox.html?firstName=${encodeURIComponent(data.firstName)}`;
-
-            } else {
+                // Save user name in localStorage
+                localStorage.setItem("firstName", data.firstName);
+            
+                // Redirect to inbox (no URL params anymore)
+                window.location.href = "inbox.html";
+            }
+            
+            else {
                 errorMessage.textContent = data.error;
             }
 
