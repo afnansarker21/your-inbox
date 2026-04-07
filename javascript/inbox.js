@@ -2,18 +2,18 @@ const inboxList = document.getElementById("inbox-list");
 const refreshBtn = document.getElementById("refresh-btn");
 const clearAllCheckbox = document.getElementById("clear-all-checkbox");
 
-const senders = ["Sarah MacDonald", "Linkedin", "Netflix", "Instagram", "Toby Miller", "Project Planner", "Zoom", "Amazon", "HOYTS", "Jane Olbin"];
-const messages = [
-    "Meeting - This Thursday our team will hold a meeting with...",
-    "Profile check - Lucy James just checked out your profile...",
-    "Subscription End - Your subscription is nearly over, why don't you...",
-    "Direct Message - @puppylover123 has liked your post, view...",
-    "(No subject) - Hi there, just checking if you have updated...",
-    "You haven't used us for a while! Login in to view your status",
-    "Want better quality filters?",
-    "Delivery - Your parcel (1Qw37ns2) is on the way",
-    "Get a 25% discount, enjoy your tickets and popcorn!",
-    "Project Review - Hey, I really love your work...",
+const emailsData = [
+    { sender: "Amazon", message: "(Delivery) Your order (#128YM3Bn) has been shipped..." },
+    { sender: "Instagram", message: "@aleesa.khan76 has just liked your post..." },
+    { sender: "Toby Miller", message: "(Project Plan) Hi team, thanks for the collaboration today. Looking forward to..." },
+    { sender: "Hanin Al-Jaj", message: "(HR Management) Just a reminder to please submit your form and confirm paycheck..." },
+    { sender: "Linkedin", message: "Chris O'Bollen has just sent you a follow!" },
+    { sender: "me", message: "(no subject) This is my paycheck, download PDF..." },
+    { sender: "Brian Kello", message: "(Meeting) Hi team, just a reminder that our meeting this Wednesday is cancelled..." },
+    { sender: "GrocerySHop", message: "$$$You have just won $45,000, please click on the link below to redeem!" },
+    { sender: "Project Planner", message: "Thanks for signing up! Please activate your email to get started..." },
+    { sender: "Chloe Yam", message: "Hi, can you please update the team portfolio? I noticed you have made some..." }
+
 ];
 
 function updateCount() {
@@ -28,16 +28,15 @@ function generateEmails() {
     document.getElementById("email-count").textContent = emailCount;
 
     for (let i = 0; i < emailCount; i++) {
-        const sender = senders[Math.floor(Math.random() * senders.length)];
-        const message = messages[Math.floor(Math.random() * messages.length)];
+        const emailData = emailsData[Math.floor(Math.random() * emailsData.length)];
 
         const email = document.createElement("div");
         email.classList.add("email", "unread");
 
         email.innerHTML = `
         <input type="checkbox" class="email-checkbox">
-        <span class="sender">${sender}</span>
-        <span class="message">${message}</span>
+        <span class="sender">${emailData.sender}</span>
+        <span class="message">${emailData.message}</span>
         <button class="delete-btn">Delete</button>
 
         `;
