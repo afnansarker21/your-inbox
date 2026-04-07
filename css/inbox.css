@@ -37,7 +37,7 @@ img {
 .welcome-container {
     display: flex;
     justify-content: space-between;
-    align-items: centre;
+    align-items: center;
     margin-bottom: 20px;
 
 }
@@ -61,6 +61,63 @@ img {
     background-color: #FFA669;
 }
 
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+#refresh-btn {
+    background-color: #eee;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: "Lexend", sans-serif;
+}
+
+.clear-all {
+    font-family: "Lexend", sans-serif;
+    color: grey;
+}
+
+.divider {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 10px 0;
+}
+
+/* email row */
+.email {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+}
+
+.email.unread {
+    font-weight: bold;
+}
+
+.message {
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.delete-btn {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.email.active .delete-btn {
+    display: block;
+}
 
 /* Footer styling */
 footer {

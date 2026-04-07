@@ -19,3 +19,7 @@
     transition: all 0.3s ease;
     font-family: "Lexend", sans-serif;
 }
+
+#home-btn:hover {
+    background-color: #FFA669;
+}

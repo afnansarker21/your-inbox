@@ -25,7 +25,16 @@
                 <h1 id="welcome"></h1>
                 <a href="signout.html"><button id="signout-btn">Sign Out</button></a>
             </div>
-                <p>You have (3) inboxes to clear</p>
+            <p>You have (<span id="email-count">0</span>) inboxes to clear</p>
+                <div class="controls">
+                    <button id="refresh-btn">Refresh</button>
+                    <label class="clear-all"> 
+                        <input type="checkbox" id="clear-all-checkbox">Clear all
+                    </label>
+                </div>
+                <hr class="divider">
+                <div id="inbox-list"></div>
+
             </div>
         </div>
     </main>
@@ -60,6 +69,6 @@
 
 
 
-<script src="inbox.js"></script>
+<script src="javascript/inbox.js"></script>
 </body>
 </html>

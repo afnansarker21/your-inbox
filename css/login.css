@@ -85,6 +85,10 @@ a {
     font-family: "Lexend", sans-serif;
 }
 
+#login-btn:hover {
+    background-color: #FFA669;
+}
+
 
 /* Footer styling */
 footer {
