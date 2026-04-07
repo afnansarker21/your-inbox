@@ -24,12 +24,14 @@ function updateCount() {
 function generateEmails() {
     inboxList.innerHTML = "";
 
-    const emailCount = Math.floor(Math.random() * 11);
-    document.getElementById("email-count").textContent = emailCount;
+    const shuffled = [...emailsData].sort(() => 0.5 - Math.random());
+    const emailCount = Math.floor(Math.random() * (emailsData.length + 1));
 
-    for (let i = 0; i < emailCount; i++) {
-        const emailData = emailsData[Math.floor(Math.random() * emailsData.length)];
+    const selectedEmails = shuffled.slice(0, emailCount);
 
+    document.getElementById("email-count").textContent = selectedEmails.length;
+
+    selectedEmails.forEach(emailData => {
         const email = document.createElement("div");
         email.classList.add("email", "unread");
 
@@ -38,12 +40,36 @@ function generateEmails() {
         <span class="sender">${emailData.sender}</span>
         <span class="message">${emailData.message}</span>
         <button class="delete-btn">Delete</button>
-
         `;
 
         inboxList.appendChild(email);
-    }
-}
+    });
+} // ✅ THIS WAS MISSING
+
+function generateEmails() {
+    inboxList.innerHTML = "";
+
+    const shuffled = [...emailsData].sort(() => 0.5 - Math.random());
+    const emailCount = Math.floor(Math.random() * (emailsData.length + 1));
+
+    const selectedEmails = shuffled.slice(0, emailCount);
+
+    document.getElementById("email-count").textContent = selectedEmails.length;
+
+    selectedEmails.forEach(emailData => {
+        const email = document.createElement("div");
+        email.classList.add("email", "unread");
+
+        email.innerHTML = `
+        <input type="checkbox" class="email-checkbox">
+        <span class="sender">${emailData.sender}</span>
+        <span class="message">${emailData.message}</span>
+        <button class="delete-btn">Delete</button>
+        `;
+
+        inboxList.appendChild(email);
+    });
+} // ✅ THIS WAS MISSING
 
 refreshBtn.addEventListener("click", generateEmails);
 
