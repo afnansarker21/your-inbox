@@ -44,7 +44,7 @@ function generateEmails() {
 
         inboxList.appendChild(email);
     });
-} // ✅ THIS WAS MISSING
+} 
 
 function generateEmails() {
     inboxList.innerHTML = "";
@@ -69,7 +69,7 @@ function generateEmails() {
 
         inboxList.appendChild(email);
     });
-} // ✅ THIS WAS MISSING
+} 
 
 refreshBtn.addEventListener("click", generateEmails);
 
